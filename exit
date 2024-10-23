@@ -1,0 +1,56 @@
+[33mcommit ec9b6ed424a05cb43e61faec8569745e1b7e89ae[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Bilal Gakaev <bilalgakaev1@gmail.com>
+Date:   Sun Oct 20 18:50:09 2024 +0300
+
+    шапка и первая секция
+
+[33mcommit 1bcfd869fa1f070902f7c829976c2596e826adb7[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: yandex-praktikum <58176914+yandex-praktikum@users.noreply.github.com>
+Date:   Thu Dec 14 12:41:32 2023 +0100
+
+    Update tests.yml
+
+[33mcommit aec85a9c6c896312e9540e3284cdaedbb14f3a07[m
+Author: yandex-praktikum <58176914+yandex-praktikum@users.noreply.github.com>
+Date:   Thu Dec 14 12:24:23 2023 +0100
+
+    Update tests.yml
+
+[33mcommit 2aad5c3b4ba490a32b92e436463498f28f62af76[m
+Merge: 14be3f6 4532484
+Author: yandex-praktikum <58176914+yandex-praktikum@users.noreply.github.com>
+Date:   Wed Dec 13 23:30:27 2023 +0300
+
+    Merge pull request #14 from KulikAlex/main
+    
+    copy of v2
+
+[33mcommit 45324841f787800a34e07a44b3a5ef1ad8d9e8f9[m
+Author: KulikAlex <kulik_alex_91@mail.ru>
+Date:   Mon Dec 11 15:47:13 2023 +0300
+
+    Update global.css
+
+[33mcommit 4313ef947b8f4133d953abeefb04149c0802eb53[m
+Author: KulikAlex <kulik_alex_91@mail.ru>
+Date:   Mon Dec 11 15:45:58 2023 +0300
+
+    Update tests.yml
+
+[33mcommit 14be3f6b144c9dc9d4f2be46ff2ce58682fac100[m
+Author: yandex-praktikum <58176914+yandex-praktikum@users.noreply.github.com>
+Date:   Mon Jul 17 17:16:33 2023 +0300
+
+    Update tests.yml
+
+[33mcommit 4ef6e662dcf532af4de1d0e6fc43b1c615e56ca0[m
+Author: yandex-praktikum <58176914+yandex-praktikum@users.noreply.github.com>
+Date:   Wed Apr 26 13:13:50 2023 +0300
+
+    Create tests.yml
+
+[33mcommit ebd6b5e4b403aac8db5ec1ec09e930372a866c94[m
+Author: yandex-praktikum <58176914+yandex-praktikum@users.noreply.github.com>
+Date:   Wed Apr 26 13:12:22 2023 +0300
+
+    Add files via upload
