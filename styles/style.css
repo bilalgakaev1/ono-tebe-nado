@@ -1,9 +1,9 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr min-content 1fr;
   box-sizing: border-box;
   width: 1100px;
-  height: 105px;
+  min-height: 105px; /*высота не стоит ограничивать*/
   margin-top: 92px;
   padding-right: 50px;
   padding-left: 50px;
@@ -11,16 +11,15 @@
 
 .header__menu {
   margin-top: 44px;
-
 }
 
 .header__links-list {
-  position: absolute;
+  position: relative; /*не может быть абсолютной*/
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 5px;
   text-transform: lowercase;
   list-style: circle;
-
 }
 
 .header__links-list-item {
@@ -36,14 +35,16 @@
 
 .header__address {
   justify-self: end;
-  width: 240.52px;
-  height: 98px;
   margin-top: 5px;
+}
+
+.address {
+  width: 240.52px;
+  min-height: 98px; /*не стоит ограничивать высоту*/
   font-weight: 400;
   font-size: 18px;
-  line-height: 24.3px;
-
   font-style: normal;
+  line-height: 24.3px;
 }
 
 .header__logo {
@@ -55,12 +56,12 @@
 .cover {
   position: relative;
   width: 1100px;
-  height: 757px;
+  min-height: 757px; /*не стоит ограничивать высоту*/
   margin-top: 96px;
   padding-top: 165px;
   padding-right: 50px;
   padding-left: 50px;
-  background-image: url("/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -97,17 +98,17 @@
 }
 
 .aligned-text_center {
-  text-align: center;
   line-height: 130px;
   letter-spacing: 30px;
+  text-align: center;
 }
 
 .aligned-text_right {
   display: flex;
   justify-content: end;
-  text-align: right;
-  letter-spacing: 30px;
   line-height: 110px;
+  letter-spacing: 30px;
+  text-align: right;
 }
 
 .letter-spacing-extended {
@@ -124,23 +125,23 @@
   z-index: 2;
   display: block;
   align-self: center;
+  margin-left: 28px;
   color: white;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
   word-spacing: 19px;
-  margin-left: 28px;
 }
 
 .bet-button {
-  /font-family: 'Raleway';
   z-index: 2;
   box-sizing: border-box;
   width: 256px;
   height: 51px;
   border: solid 1px;
   color: white;
+  font-family: 'Raleway', Arial, sans-serif; /*альтернативный шрифт*/
   font-weight: 500;
   font-size: 22px;
   line-height: 25.83px;
@@ -151,10 +152,10 @@
 
 .lots {
   width: 1052px;
-  height: 692px;
+  min-height: 692px; /*не стоит ограничивать высоту*/
   margin-top: 179px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .lots__heading {
@@ -179,32 +180,26 @@
   flex-grow: 1;
   box-sizing: border-box;
   width: 334px;
-  height: 563px;
-  padding-top: 51px;
-  padding-left: 40px; 
+  min-height: 563px; /*не стоит ограничивать высоту*/
+  padding-top: 51px; 
   padding-right: 40px;
   padding-bottom: 48px;
+  padding-left: 40px;
+  background-repeat: no-repeat; /*перенесено в общее*/
+  background-position: center; /*перенесено в общее*/
+  background-size: 164%; /*перенесено в общее*/
 }
 
 .card_type_film {
-  background-image: url("/images/card-lot-01.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 164%;
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card_type_book {
-  background-image: url("/images/card-lot-02.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 164%;
+  background-image: url("../images/card-lot-02.jpg");
 }
 
 .card_type_picture {
-  background-image: url("/images/card-lot-03.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 165%;
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 .card__title {
@@ -224,6 +219,7 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  text-decoration: none; /*убрад нижнее подчеркивания для ссылки*/
 }
 
 .card__text {
@@ -248,13 +244,13 @@
   display: grid;
   grid-template-columns: 310px 1fr;
   width: 1052px;
-  height: 595px;
-  padding-top: 35px;
-  padding-left: 47px;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 595px; /*не стоит ограничивать высоту*/
 
   margin-top: 146px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 35px;
+  padding-left: 47px;
 }
 
 .about__logo {
@@ -280,8 +276,8 @@
 }
 
 .about__text {
-  font-family: 'Raleway';
   margin-bottom: 24px;
+  font-family: 'Raleway', Arial, sans-serif; /*альтернативный шрифт*/
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -301,23 +297,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 1000px;
-  height: 98px;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 98px; /*не стоит ограничивать высоту*/
   margin-top: 180px;
-}
-
-.footer__address {
-  width: 240px;
-  height: 98px;
   margin-right: auto;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24.3px;
-  font-style: normal;
+  margin-bottom: 88px; /*добавил нижний отступ*/
+  margin-left: auto;
+  background-color: aquamarine;
 }
 
 .footer__menu-list {
+  text-transform: lowercase;
   list-style: none;
 }
 
