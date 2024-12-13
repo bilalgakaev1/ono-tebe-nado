@@ -1,1 +1,1 @@
-https://github.com/bilalgakaev1/ono-tebe-nado
+https://github.com/bilalgakaev1/ono-tebe-nado-fd
