@@ -32,13 +32,17 @@
   list-style: none;
 }
 
+.link-active {
+  text-decoration: none;
+}
+
 .header__address {
   justify-self: end;
   margin-top: 5px;
 }
 
 .address {
-  width: 240.52px;
+  max-width: 240.52px;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -296,7 +300,7 @@
   margin-top: 180px;
   margin-right: auto;
   margin-bottom: 88px; /*добавил нижний отступ*/
-  margin-left: auto;;
+  margin-left: auto;
 }
 
 .footer__menu-list {
